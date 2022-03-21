@@ -1,5 +1,6 @@
 class Api::V1::AdminsController < ApplicationController
     skip_before_action :authorized, only: [:login]
+    
     def login
         @admin = Admin.find_by(username: admin_login_params[:username])
 
@@ -20,6 +21,8 @@ class Api::V1::AdminsController < ApplicationController
         end
 
     end
+
+    private
 
     def admin_login_params
         params.require(:admin).permit(:username, :password)
