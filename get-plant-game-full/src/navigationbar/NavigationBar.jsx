@@ -9,8 +9,8 @@ export default function NavigationBar() {
         <div className="navCentre">
             <ul className="navList">
                 <li className="navListItem">Home</li>
-                <li className="navListItem">About Us</li>
-                <li className="navListItem">Contact Us</li>
+                <li className="navListItem">About</li>
+                <li className="navListItem">Contact</li>
                 <li className="navListItem">New Tip</li>
                 <li className="navListItem">Logout</li>
             </ul>

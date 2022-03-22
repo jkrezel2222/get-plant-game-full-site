@@ -1,22 +1,35 @@
 .navigation{
     width: 100%;
     height: 50px;
+    margin-top: 10px;
     background-color: white;
     position: sticky;
     top: 0;
     display: flex;
     align-items: center;
     font-family: 'Lora', serif;
+    z-index: 999;
 }
 
-.navLeft, .navRight{
+.navLeft{
     flex: 3;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 10px;
     cursor: pointer;
-    color: #666;
+    color: #2a9d8f
+}
+
+.navRight{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff1fa9;
 }
 
 .navCentre{
@@ -36,12 +49,12 @@
     font-weight: 300;
     font-size: 18px;
     cursor: pointer;
-    color: #666;
+    color: #ff1fa9;
 }
 
 .navSearchIcon{
     font-size: 18px;
     cursor: pointer;
     margin-left: 15px;
-    color: #666;
+    color: #ff1fa9;
 }

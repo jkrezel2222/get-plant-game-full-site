@@ -1,5 +1,8 @@
 .header{
     margin-top: 60px;
+    align-items: center;
+    display: flex;
+
 }
 
 .headerTitles{
@@ -8,4 +11,21 @@
     align-items: center;
     font-family: 'Nunito Sans', sans-serif;
     color: #444;
+}
+
+.headerTitleLge{
+    position: absolute;
+    top: 42%;
+    left: 55%;
+    font-size: 8.5vw;
+    line-height: 90%;
+    font-weight: 700;
+    color: #2a9d8f;
+}
+
+.headerImg{
+    width: 100%;
+    height: 450px;
+    margin-top: 80px;
+    object-fit: cover;
 }
