@@ -1,6 +1,6 @@
 .navigation{
     width: 100%;
-    height: 50px;
+    height: 90px;
     margin-top: 10px;
     background-color: white;
     position: sticky;
@@ -29,7 +29,7 @@
     margin-right: 10px;
     font-size: 18px;
     cursor: pointer;
-    color: #ff1fa9;
+
 }
 
 .navCentre{

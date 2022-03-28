@@ -1,0 +1,25 @@
+.login{
+    height: calc(100vh - 50px);
+    background:
+    url("https://images.unsplash.com/photo-1488645411773-a3b09ea07e29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2888&q=80");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm{
+    width: 60%;
+    margin-top: 120px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+.formRow{
+    margin-bottom: 25px;
+}
+
+.buttonLogin{
+    margin-right: 15px;
+}

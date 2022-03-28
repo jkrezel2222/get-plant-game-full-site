@@ -1,0 +1,32 @@
+.register{
+    height: calc(100vh - 50px);
+    background:
+    url("https://images.unsplash.com/photo-1604762511431-6280a12cb835?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2942&q=80");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.registerTitle{
+    margin-top: 80px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: dimgray;
+}
+
+.registerForm{
+    width: 60%;
+    margin-top: 120px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+.formRow{
+    margin-bottom: 25px;
+}
+
+.buttonRegister{
+    margin-right: 15px;
+}

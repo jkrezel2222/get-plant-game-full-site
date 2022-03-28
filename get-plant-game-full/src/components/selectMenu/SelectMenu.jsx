@@ -13,11 +13,11 @@ export default function SelectMenu() {
     return (
         <div className="container">
           <div className="row">
-            <div className="col-md-3"></div>
+            <div className="col-md-9"></div>
             <div className="col-md-6">
-              <Select options={Categories} className="selectMenu" />
+              <Select options={Categories} placeholder="Category" className="selectMenu" />
             </div>
-            <div className="col-md-4"></div>
+            <div className="col-md-3"></div>
           </div>
         </div>
     );

@@ -1,0 +1,54 @@
+.newTip{
+    padding-top: 50px;
+}
+
+.newTipFormGroup{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.newTipIcon{
+    width: 25px;
+    height: 25px;
+    margin-left: 13px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 300;
+    color: dimgray;
+    cursor: pointer;
+}
+
+.newTipInput{
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 22px;
+    border: none;
+    padding: 20px;
+    margin-bottom: 15px;
+    width: 70vw;
+}
+
+.writeText{
+    font-size: 16px;
+}
+
+.publishButton{
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    margin-left: 12px;
+    margin-bottom: 80px;
+}
+
+.newTipImg{
+    margin-left: 12px;
+    width: 70vw;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+

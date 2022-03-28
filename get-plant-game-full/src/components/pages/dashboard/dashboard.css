@@ -1,0 +1,46 @@
+.dashboard{
+    display: flex;
+}
+
+.dashboardSide{
+    flex: 3;
+}
+
+.dashboardWrapper{
+    flex: 9;
+    margin-top: 50px;
+
+}
+
+.dashboardForm{
+    width: 70%;
+    color: dimgray;
+    margin-left: 75px;
+    margin-top: 50px;
+    font-weight: 300;
+}
+
+.dashboardTitle{
+    display: flex;
+    align-items: center;
+    margin-left: 75px;
+    margin-top: 15px;
+}
+
+.dashboardUpdateTitle{
+    font-size: 1.2vw;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    cursor: pointer;
+    color: dimgray;
+}
+
+.dashboardDeleteTitle{
+    font-size: 1.2vw;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    cursor: pointer;
+    color: dimgray;
+}
