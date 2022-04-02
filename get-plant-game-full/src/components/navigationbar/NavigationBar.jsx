@@ -1,27 +1,32 @@
 import React from "react";
 import "./navigationbar.css"
 import { Link } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+
 
 
 export default function NavigationBar() {
   return (
-    <div className="navigation">
-        <div className="navLeft">
-            <h3>Get Plant Game</h3>    
-        </div>
-        <div className="navCentre">
-            <ul className="navList">
-                <Link to="/home" className="navListItem">Home</Link>
-                <Link to="/about" className="navListItem">About</Link>
-                <Link to="/newTip" className="navListItem">New Tip</Link>
-                <Link to="/logout" className="navListItem">Logout</Link>
-            </ul>
-        </div>
-        <div className="navRight">
-                <Link to="/dashboard">User Dashboard</Link>
-        <i className="navSearchIcon fa-solid fa-magnifying-glass"></i>
-        </div>
-        
+    <div>    
+      <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
+        <Container>
+          <Link to="/home" className="navBrand">Get Plant Game</Link>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="me-auto">
+                <Link to="/home" className="navItem" id="navigationHover">Home</Link>
+                <Link to="/about" className="navItem" id="navigationHover">About</Link>
+                <Link to="/newTip" className="navItem" id="navigationHover">New Tip</Link>
+              </Nav>
+              <Nav>
+                <Link to="/dashboard" className="navItem" id="navigationHover">Dashboard</Link>
+                <Link to="/login" className="navSign" id="navigationHover">Sign In</Link>
+              </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </div>
   );
 };

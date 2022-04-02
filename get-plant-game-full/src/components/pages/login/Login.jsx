@@ -3,11 +3,18 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import { Link } from "react-router-dom";
 
 
 
 export default function Login() {
-  return (
+  
+  //token based authentication, store it in local storage
+  //use redux for state
+
+  
+  
+    return (
     <div className="login" >
         <div className="container">
         <h3 className="loginTitle">Login</h3>
@@ -30,9 +37,11 @@ export default function Login() {
                     <Button className="buttonLogin" variant="success" type="submit">
                     Login
                     </Button>
+                    <Link to="/register">
                     <Button variant="light" type="submit">
                     Register
                     </Button>
+                    </Link>
             </Form>
         </div>
         </div>

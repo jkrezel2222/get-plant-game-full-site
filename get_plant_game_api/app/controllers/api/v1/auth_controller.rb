@@ -1,4 +1,4 @@
-class Api::V1::AdminsController < ApplicationController
+class Api::V1::AuthController < ApplicationController
     skip_before_action :authorized, only: [:login]
     
     def login
@@ -13,11 +13,12 @@ class Api::V1::AdminsController < ApplicationController
                     },
                     status: :accepted
 
-        else
-            render json: {
-                message: 'Invalid username or password',
-            },
-            status: :unauthorized
+                else
+                    render json: {
+                        message: 'Invalid username or password',
+                    },
+                    status: :unauthorized
+        
         end
 
     end

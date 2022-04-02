@@ -22,18 +22,19 @@ ActiveRecord::Schema.define(version: 2022_03_19_025003) do
   end
 
   create_table "plants", force: :cascade do |t|
-    t.integer "admin_id", null: false
     t.string "title"
-    t.text "image_data"
+    t.string "image_data"
     t.string "description"
-    t.string "type"
-    t.integer "id_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["admin_id"], name: "index_plants_on_admin_id"
-    t.index ["id_id"], name: "index_plants_on_id_id"
   end
 
-  add_foreign_key "plants", "admins"
-  add_foreign_key "plants", "ids"
+  create_table "tips", force: :cascade do |t|
+    t.string "title"
+    t.string "image_data"
+    t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
 end

@@ -1,3 +1,3 @@
-class AdminSerializer < ActiveModel::AdminSerializer
+class AdminSerializer < ActiveModel::Serializer
     attributes :id, :username, :firstname, :lastname
 end

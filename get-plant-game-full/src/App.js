@@ -10,6 +10,8 @@ import Single from "./components/pages/single/Single";
 import About from "./components/pages/about/About";
 import Home from "./components/pages/home/Home";
 
+import { createApi } from '@reduxjs/toolkit/query/react';
+
 
 function App() {
   return (
@@ -22,6 +24,9 @@ function App() {
             <Route exact path="/about"><About /></Route>
             <Route exact path="/newTip"><NewTip /></Route>
             <Route exact path="/dashboard"><Dashboard /></Route>
+            <Route exact path="/login"><Login /></Route>
+            <Route exact path="/register"><Register /></Route>
+            <Route exact path="/single"><Single /></Route>
         </Route>
       </Switch>
   </Router>

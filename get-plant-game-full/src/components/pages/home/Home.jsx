@@ -8,8 +8,12 @@ export default function Home() {
     <>
       <Header/>
       <div className="home">
-        <PlantTips />
-        <Sidebar />
+        <div className="homeWrapper">
+          <PlantTips />
+        </div>
+        <div className="homeSidebarWrapper">
+          <Sidebar />
+        </div>
       </div>
     </>
   )

@@ -4,7 +4,7 @@ class ApplicationController < ActionController::API
     def encode_token(payload)
         JWT.encode(payload, '856f234gf3g')
     end
-
+        # { Authorization: 'Bearer <token>' }
     def auth_header
         request.headers['Authorization']
     end
@@ -19,6 +19,7 @@ class ApplicationController < ActionController::API
                 nil                
             end
         end
+    end
 
 
         def current_admin

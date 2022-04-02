@@ -1,3 +1,14 @@
 .home{
     display: flex;
 }
+
+.homeWrapper{
+    flex: 6;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.homeSidebarWrapper{
+    flex: 3;
+    flex-direction: column;
+}
