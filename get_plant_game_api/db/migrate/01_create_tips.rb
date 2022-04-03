@@ -4,6 +4,7 @@ class CreateTips < ActiveRecord::Migration[6.1]
         t.string :title
         t.string :image_data
         t.string :description
+        t.integer :admin_id
   
         t.timestamps
       end

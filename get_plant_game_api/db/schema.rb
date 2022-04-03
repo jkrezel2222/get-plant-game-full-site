@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2022_03_19_025003) do
     t.string "title"
     t.string "image_data"
     t.string "description"
+    t.integer "admin_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -1,4 +1,4 @@
-class Current < ActiveSupport::CurrentAttributes
-    attribute :admin
+# class Current < ActiveSupport::CurrentAttributes
+#     attribute :admin
 
-end
+# end
