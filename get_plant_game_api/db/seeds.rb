@@ -6,4 +6,4 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-    tip = Plant.create(title: "Title here", image_data: "Image data here", description: "Description here", admin_id: 1)
+    plant = Plant.create(title: "Title here", image_data: "Image data here", description: "Description here", admin_id: 1)

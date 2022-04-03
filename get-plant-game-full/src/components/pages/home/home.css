@@ -3,7 +3,7 @@
 }
 
 .homeWrapper{
-    flex: 6;
+    flex: 9;
     flex-direction: column;
     margin-top: 25px;
 }

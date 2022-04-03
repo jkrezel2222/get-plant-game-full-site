@@ -3,7 +3,7 @@ class Api::V1::PlantsController < ApplicationController
     # GET request mapped to /api/v1/plants
     # Keep all CRUD operations here for plants resource
     def index
-        @plants = Plant.all
+        @plant = Plant.all
         render json: PlantSerializer.new(@plant).to_serialized_json
     end
 

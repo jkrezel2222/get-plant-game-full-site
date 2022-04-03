@@ -1,5 +1,6 @@
 import Header from "../../header/Header"
-import PlantTips from "../../plantTips/PlantTips"
+// import PlantTips from "../../plantTips/PlantTips"
+import Plant from "../../plant/Plant"
 import Sidebar from "../../sidebar/Sidebar"
 import "./home.css"
 
@@ -9,7 +10,7 @@ export default function Home() {
       <Header/>
       <div className="home">
         <div className="homeWrapper">
-          <PlantTips />
+          <Plant />
         </div>
         <div className="homeSidebarWrapper">
           <Sidebar />

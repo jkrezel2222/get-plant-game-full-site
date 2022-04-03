@@ -10,7 +10,6 @@ import Single from "./components/pages/single/Single";
 import About from "./components/pages/about/About";
 import Home from "./components/pages/home/Home";
 
-import { createApi } from '@reduxjs/toolkit/query/react';
 
 
 function App() {
