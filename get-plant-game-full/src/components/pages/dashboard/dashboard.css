@@ -1,15 +1,16 @@
 .dashboard{
+    height: calc(100vh - 50px);
+    background:
+    url("https://images.unsplash.com/photo-1536240625773-5d810709f034?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80");
+    background-size: cover;
+    background-position: center;
     display: flex;
-}
-
-.dashboardSide{
-    flex: 3;
+    flex-direction: column;
 }
 
 .dashboardWrapper{
     flex: 9;
     margin-top: 100px;
-
 }
 
 .dashboardForm{

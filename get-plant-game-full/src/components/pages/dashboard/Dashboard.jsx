@@ -38,9 +38,6 @@ export default function Dashboard() {
             </div>
 
         </div>
-        <div className="dashboardSide">
-            <Sidebar />
-        </div>
     </div>
   )
 }
