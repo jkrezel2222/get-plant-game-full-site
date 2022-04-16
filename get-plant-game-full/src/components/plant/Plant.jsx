@@ -11,7 +11,7 @@ class Plant extends Component {
   };
 
   async componentDidMount() {
-    const response = await fetch('https://api-dog-breeds.herokuapp.com/api/dogs', {
+    const response = await fetch('/api/v1/plants', {
       method: 'GET',
       headers: {
         'Authorization': 'bearer token',
@@ -39,28 +39,19 @@ class Plant extends Component {
           <div key={plants.id}>
             
           <div className="plantWrapper">
-            <img src={plants.image} alt={plants.breedName} className="plantImg" />
+            <img src={plants.image_data} alt={plants.title} className="plantImg" />
 
             <div className="plantInfo">
-              <div className="plantCategory">
-                <span className="plantCategory">Indoor |</span>
-                <span className="plantCategory">Outdoor</span>
-            </div>
             
             <span className="plantTitle">
-              {plants.breedName}
-            </span>
-            <hr />
-            
-            <span className="plantDate">
-              {plants.id}
+              {plants.title}
             </span>
             
           </div>
             <p className="plantDescription">
               {plants.description}
             </p>
-
+            <hr />
           </div>
           </div>
           )}

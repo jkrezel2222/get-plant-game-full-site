@@ -1,6 +1,11 @@
 class Api::V1::AdminsController < ApplicationController
-    skip_before_action :authorized, only: [:create]
+    skip_before_action :authorized, only: [:create, :index]
 
+    def index
+        @admins = Admin.all
+        render json: @admins
+    end
+    
     def create
         @admin = Admin.create(admin_params)
 
@@ -17,7 +22,7 @@ class Api::V1::AdminsController < ApplicationController
     private
 
     def admin_params
-        params.require(:admin).permit(:username, :password, :firstname, :lastname)
+        params.require(:admin).permit(:username, :password, :firstname, :lastname  )
     end
 
 end

@@ -1,4 +1,5 @@
 class Api::V1::PlantsController < ApplicationController
+    skip_before_action :authorized, only: [:login, :index]
 
     # GET request mapped to /api/v1/plants
     # Keep all CRUD operations here for plants resource

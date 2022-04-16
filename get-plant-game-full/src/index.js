@@ -3,12 +3,17 @@ import { render } from "react-dom";
 import './custom.scss';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Provider } from "react-redux";
+
 
 
 
 
 const rootElement = document.getElementById("root");
 render(
-    <App />, 
+
+
+    <App />,
+     
   rootElement
 );

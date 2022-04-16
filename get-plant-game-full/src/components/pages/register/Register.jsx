@@ -1,38 +1,72 @@
-import "./register.css"
+import React, { Component } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import axios from "axios";
 
 
+export class Register extends Component {
 
-export default function Register() {
-  return (
-    <div className="register" >
-        <div className="container">
-            <h3 className="registerTitle">Register here</h3>
-        <div>
-            <Form className="registerForm">
-                <Row className="mb-3">
-                    <Form.Group as={Col} controlId="formGridEmail">
-                        <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
-                    </Form.Group>
-                </Row>
+    
+    handleSubmit = e => {
+        e.preventDefault();
+        const data = {
+            admin: {
+            username: this.username,
+            firstname: this.firstname,
+            lastname: this.lastname,
+            password: this.password
+            }
+        };
+        console.log(data);
+        axios.post("http://localhost:5000/api/v1/admins", data)
+        .then(
+            res => {
+                console.log(res)
+            }
+        ).catch(
+            err => {
+                console.log(err);
+            }
+        )
+    };
 
-                <Row className="formRow">
-                    <Form.Group as={Col} controlId="formGridPassword">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
-                        </Form.Group>
-                </Row>
+    render() {
+        return (
+        
+        <form onSubmit={this.handleSubmit} >
+            <h3>Register</h3>
 
-                    <Button className="buttonRegister" variant="success" type="submit">
-                    Submit
-                    </Button>
-            </Form>
-        </div>
-        </div>
-    </div>
-  )
+            <Form.Group className="form-group">
+                <label>Username</label>
+                <input type="text" className="form-control" placeholder="Username" 
+                onChange={e => this.username = e.target.value} />
+            </Form.Group>
+            
+            <Form.Group className="form-group">
+                <label>First Name</label>
+                <input type="text" className="form-control" placeholder="First name" 
+                onChange={e => this.firstname = e.target.value} />
+            </Form.Group>
+
+            <Form.Group className="form-group">
+                <label>Last Name</label>
+                <input type="text" className="form-control" placeholder="Last name" 
+                onChange={e => this.lastname = e.target.value} />
+            </Form.Group>
+
+            <Form.Group className="form-group">
+                <label>Password</label>
+                <input type="Password" className="form-control" placeholder="Password" 
+                onChange={e => this.password = e.target.value} />
+            </Form.Group>
+
+            <button className="btn btn-success" >Register</button>
+
+
+        </form>
+
+        )
+    }
 }
+
+export default Register

@@ -23,10 +23,22 @@ class Api::V1::AuthController < ApplicationController
 
     end
 
+    # new login code added here
+
+    def token_authenticate
+        token = request.headers["Authenticate"]
+        @admin = Admin.find(decode(token)["admin_id"])
+
+        render json: @admin
+    end
+
+
+
+
     private
 
     def admin_login_params
-        params.require(:admin).permit(:username, :password)
+        params.require(:auth).permit(:username, :password)
     end
 
 end
