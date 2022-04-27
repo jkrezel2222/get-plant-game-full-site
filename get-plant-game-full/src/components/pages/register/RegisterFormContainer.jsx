@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { registerAdmin } from "../../../redux/actions/authActionCreators";
+import { toast } from "react-toastify";
 
 
 const RegisterFormContainer = ({ dispatchRegisterAction }) => {
@@ -13,15 +14,15 @@ const RegisterFormContainer = ({ dispatchRegisterAction }) => {
     const handleOnSubmit = (event) => {
         event.preventDefault();
         dispatchRegisterAction(firstname, lastname, username, password,
-            () => console.log("Admin account created successfully"),
-            (message) => console.log(`Error: ${message}`));
+            () => toast.success("Account created successfully!"),
+            (message) => toast.error(`Error: ${message}`));
     };
     
     return(
         <div>
         <br />
         <br />
-            <h3>Register forms will go here</h3>
+            <h3>New here? Register an account</h3>
         <br />
         <form onSubmit={handleOnSubmit}>
             <div className="form-group">

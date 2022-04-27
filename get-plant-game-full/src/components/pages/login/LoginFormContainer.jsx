@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { loginAdmin } from "../../../redux/actions/authActionCreators";
+import { toast } from "react-toastify";
 
 
 const LoginFormContainer = ({ dispatchLoginAction }) => {
@@ -11,8 +12,8 @@ const LoginFormContainer = ({ dispatchLoginAction }) => {
     const handleOnSubmit = (event) => {
         event.preventDefault();
         dispatchLoginAction(username, password,
-            () => console.log("Logged in successfully"),
-            (message) => console.log(`Error: ${message}`))
+            () => toast.success("Logged in successfully"),
+            (message) => toast.error(`Error: ${message}`));
     };
 
     return(
@@ -20,7 +21,7 @@ const LoginFormContainer = ({ dispatchLoginAction }) => {
         <br />
         <br />
         <br />
-            <h3>Login forms will go here</h3>
+            <h3>Login and let's get to it!</h3>
         <br />
             <form onSubmit={handleOnSubmit} >
                 <div className="form-group">

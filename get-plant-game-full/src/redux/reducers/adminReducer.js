@@ -15,6 +15,8 @@ export default function adminReducer(state = INITIAL_STATE, action) {
     switch(action.type) {
         case constants.SET_ADMIN_INFO:
             return{ ...action.payload };
+        case constants.RESET_ADMIN_INFO:
+            return { ...defaultState };
         default:
             return state;
     }

@@ -25,6 +25,12 @@ export const loginAdmin = (data, onSuccess, onError) => ({
 })
 
 
+export const logoutAdmin = () => {
+    localStorage.removeItem("ADMIN_INFO");
+    return { type: constants.RESET_ADMIN_INFO };
+};
+
+
 
 const setAdminInfo = (data) => {
     // const saveData = JSON.parse(atob(data.jwt.split(".")[1]));
