@@ -1,19 +1,17 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"; 
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom"; 
 import NavigationBar from "./components/navigationbar/NavigationBar";
 
-import Register_old from "./components/pages/register/Register_old";
+import { Register } from "./components/pages/register/Register";
 import Login from "./components/pages/login/Login";
 import Dashboard from "./components/pages/dashboard/Dashboard";
 import NewTip from "./components/pages/newTip/NewTip";
-import Single from "./components/pages/single/Single";
+import EditTip from "./components/pages/editTip/EditTip";
 import About from "./components/pages/about/About";
 import Home from "./components/pages/home/Home";
 
 
-function App() {
-
-  
+const App = () => {
     return (
     
     <div>
@@ -27,14 +25,16 @@ function App() {
             <Route exact path="/newTip"><NewTip /></Route>
             <Route exact path="/dashboard"><Dashboard /></Route>
             <Route exact path="/login"><Login /></Route>
-            <Route exact path="/register"><Register_old /></Route>
-            <Route exact path="/single"><Single /></Route>
+            <Route exact path="/register"><Register /></Route>
+            <Route exact path="/edittip"><EditTip /></Route>
+            <Route exact path="/edittip/:plantId"><EditTip /></Route>
+            <Redirect to="/login" />
         </Route>
       </Switch>
     </Router>
 
     </div>
-    );
+  );
 }
 
 export default App;

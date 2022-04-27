@@ -1,21 +1,18 @@
-import Header from "../../header/Header"
-// import PlantTips from "../../plantTips/PlantTips"
-import Plant from "../../plant/Plant"
-import Sidebar from "../../sidebar/Sidebar"
-import "./home.css"
+import React from 'react'
+import Plant from '../../plant/Plant'
 
-export default function Home() {
+const Home = () => {
   return (
-    <>
-      <Header/>
-      <div className="home">
-        <div className="homeWrapper">
-          <Plant />
-        </div>
-        <div className="homeSidebarWrapper">
-          <Sidebar />
-        </div>
+    <div>
+      <br />
+      <br />
+      <br />
+      <h3>Home page</h3>
+      <div>
+        <Plant />
       </div>
-    </>
+    </div>
   )
 }
+
+export default Home

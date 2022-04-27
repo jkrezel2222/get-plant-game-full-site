@@ -1,10 +1,10 @@
 import "./dashboard.css"
 import { Component } from "react";
 import { Register } from "../register/Register";
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+// import Form from 'react-bootstrap/Form';
+// import Button from 'react-bootstrap/Button';
+// import Col from 'react-bootstrap/Col';
+// import Row from 'react-bootstrap/Row';
 
 
 export default class Dashboard extends Component {
@@ -39,12 +39,12 @@ export default class Dashboard extends Component {
             <div className="dashboard">
 
                 <div>
-                    {this.state.admin.username ? <h3>{this.state.admin.firstname}</h3> :
+                    {this.state.admin.username ? <h3>Welcome {this.state.admin.firstname}</h3> :
                     <Register register={this.register} />
                     }
                 </div>
 
-                <div className="dashboardWrapper">
+                {/* <div className="dashboardWrapper">
                     <div className="dashboardTitle">
                         <span className="dashboardUpdateTitle">Update your account</span>
                     </div>
@@ -72,7 +72,7 @@ export default class Dashboard extends Component {
                         </Form>
                     </div>
 
-                </div>
+                </div> */}
             </div>
         )
     }

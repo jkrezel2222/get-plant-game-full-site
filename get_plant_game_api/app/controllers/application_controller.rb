@@ -22,21 +22,22 @@ class ApplicationController < ActionController::API
     end
 
 
-        def current_admin
-            if decoded_token
-                admin_id = decoded_token[0]['admin_id']
-                @admin = Admin.find_by(id: admin_id)
-            end
+    def current_admin
+        if decoded_token
+            admin_id = decoded_token[0]['admin_id']
+            @admin = Admin.find_by(id: admin_id)
         end
+    end
 
-        def logged_in?
-            !!current_admin
-        end
+    def logged_in?
+        !!current_admin
+    end
 
-        def authorized
-            unless logged_in?
-                render json: { message: 'You must log in' }, status: :unauthorized
-            end
+    def authorized
+        unless logged_in?
+            render json: { message: 'You must log in' }, status: :unauthorized
         end
+    end
+
 
 end
