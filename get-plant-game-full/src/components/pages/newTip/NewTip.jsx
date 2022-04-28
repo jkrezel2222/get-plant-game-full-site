@@ -1,5 +1,4 @@
 import React from 'react'
-import SelectMenu from "../../selectMenu/SelectMenu";
 
 
 const NewTip = () => {
@@ -27,9 +26,6 @@ const NewTip = () => {
                   <i className="newTipIcon fa-solid fa-file-image"></i>
                   </label>
                   <input type="file" id="fileinput" style={{display:"none"}}/>
-                      <div className="newTipSelectWrapper">
-                          <SelectMenu />
-                      </div>
               </div>
               <div>
               <button type="submit" className="btn btn-success publishButton" >Publish</button>{' '}

@@ -14,15 +14,6 @@ export default function Sidebar() {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum in quis qui odio assumenda iure.
             </p>
         </div>
-
-        <div className="sidebarItem">
-            <span className="sidebarTitle">PLANT TYPE</span>
-            <ul className="sidebarList">
-                <li className="sidebarListItem">Indoor</li>
-                <li className="sidebarListItem">Outdoor</li>
-                <li className="sidebarListItem">All Tips</li>
-            </ul>
-        </div>
     </div>
   )
 }

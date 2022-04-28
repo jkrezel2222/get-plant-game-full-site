@@ -6,7 +6,7 @@ export default function About() {
       <div className="aboutTitle">
         About
       </div>
-        <p>We love all things plants and gardening. Have a look around to find amazing planting and gardening tips and hacks.</p>
+        <p>We're a community that loves all things plants and gardening. Have a look around to find amazing planting and gardening tips and hacks and share some of your own. We're glad you're here.</p>
       <div className="aboutTitle">  
         Contact Us
       </div>
