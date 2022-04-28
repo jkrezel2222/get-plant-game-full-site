@@ -1,18 +1,37 @@
-import React from 'react'
-import Plant from '../../plant/Plant'
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import Header from "../../header/Header";
+import Plant from "../../plant/Plant";
+import Sidebar from "../../sidebar/Sidebar";
+import { connect } from "react-redux";
+import { fetchAllTips } from "../../../redux/actions/tipsActionsCreators";
 
-const Home = () => {
+
+const Home = ({ loading, plants, dispatchFetchAllTipsAction }) => {
+
+  useEffect(() => dispatchFetchAllTipsAction(), [dispatchFetchAllTipsAction]);
   return (
-    <div>
-      <br />
-      <br />
-      <br />
-      <h3>Home page</h3>
-      <div>
-        <Plant />
-      </div>
-    </div>
-  )
-}
+    <React.Fragment>
+        <Header />
+          <div>
+            <br />
+              <Link to="newTip" className="btn btn-outline-secondary ml-4" >Add new tip</Link>
+          </div>
+          <div>
+            <Plant plants={plants} />
+          </div>
+        <Sidebar />
+    </React.Fragment>
+  );
+};
 
-export default Home
+const mapStateToProps = state => ({
+  loading: state.loading,
+  plants: state.plants
+});
+
+const mapDispatchToProps = dispatch => ({
+    dispatchFetchAllTipsAction: () => dispatch(fetchAllTips())
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

@@ -19,20 +19,21 @@ export default function NavigationBar({ username, isLoggedIn, onLogout }) {
                 Logged in { username }
             </span>
           </h5> } */}
-          { isLoggedIn &&
-          <button className="btn btn-outline-secondary ml-auto mr-4" type="button" onClick={onLogout} >
-            Logout
-          </button> }
+
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
-
-              </Nav>
-              
-              <Nav>
-                <Link to="/home" className="navItem" id="navigationHover">Home</Link>
+              { isLoggedIn &&
+              <button className="btn btn-outline-secondary ml-auto mr-4" type="button" onClick={onLogout} >
+                Logout
+              </button> }
+                <Link to="/" className="navItem" id="navigationHover">Home</Link>
                 <Link to="/about" className="navItem" id="navigationHover">About</Link>
                 <Link to="/newTip" className="navItem" id="navigationHover">New Tip</Link>
+              </Nav>
+
+              <Nav>
+
               </Nav>
           </Navbar.Collapse>
         </Container>

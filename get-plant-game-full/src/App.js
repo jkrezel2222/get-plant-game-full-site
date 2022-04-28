@@ -35,7 +35,7 @@ const App = ({ admin, dispatchLogoutAction }) => {
               <Route exact path="/newTip"><NewTip /></Route>
               <Route exact path="/edittip"><EditTip /></Route>
               <Route exact path="/edittip/:plantId"><EditTip /></Route>
-              <Redirect to="/home" />
+              <Redirect to="/" />
         </Switch>
       }
       </div>

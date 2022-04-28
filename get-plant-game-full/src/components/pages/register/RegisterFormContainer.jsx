@@ -22,7 +22,7 @@ const RegisterFormContainer = ({ dispatchRegisterAction }) => {
         <div>
         <br />
         <br />
-            <h3>New here? Register an account</h3>
+            <h4>New here? Register an account</h4>
         <br />
         <form onSubmit={handleOnSubmit}>
             <div className="form-group">

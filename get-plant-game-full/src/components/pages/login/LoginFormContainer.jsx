@@ -21,7 +21,7 @@ const LoginFormContainer = ({ dispatchLoginAction }) => {
         <br />
         <br />
         <br />
-            <h3>Login and let's get to it!</h3>
+            <h4>Login and let's get to it!</h4>
         <br />
             <form onSubmit={handleOnSubmit} >
                 <div className="form-group">
