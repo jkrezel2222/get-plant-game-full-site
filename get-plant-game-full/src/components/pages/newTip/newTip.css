@@ -7,6 +7,13 @@
     align-items: center;
 }
 
+.newTipButtonRow{
+
+    flex-direction: row;
+
+    justify-content: space-evenly;
+}
+
 .newTipInput{
     font-family: 'Inter', sans-serif;
     font-weight: 200;

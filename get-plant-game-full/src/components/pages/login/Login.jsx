@@ -1,17 +1,20 @@
 import React from 'react'
 import RegisterFormContainer from '../register/RegisterFormContainer'
 import LoginFormContainer from './LoginFormContainer'
+import "../register/register.css";
+
+
 
 const Login = () => {
   return (
-    <div>
-        <h3>Login</h3>
-        <div>
+    <div className="register">
+        <br />
+        <div className="registerForm">
             <LoginFormContainer />
-        </div>
         <br />
         <br />
             <RegisterFormContainer />
+        </div>
         
     </div>
   )

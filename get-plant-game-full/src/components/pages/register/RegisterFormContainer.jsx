@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import { registerAdmin } from "../../../redux/actions/authActionCreators";
 import { toast } from "react-toastify";
+import "./register.css"
 
 
 const RegisterFormContainer = ({ dispatchRegisterAction }) => {
@@ -20,9 +21,9 @@ const RegisterFormContainer = ({ dispatchRegisterAction }) => {
     
     return(
         <div>
-        <br />
-        <br />
-            <h4>New here? Register an account</h4>
+            <div className="registerTitle">
+            <h5>New here? Register an account</h5>
+            </div>
         <br />
         <form onSubmit={handleOnSubmit}>
             <div className="form-group">

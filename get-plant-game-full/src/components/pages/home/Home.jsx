@@ -10,16 +10,16 @@ const Home = ({ loading, plants, dispatchFetchAllTipsAction }) => {
 
   useEffect(() => dispatchFetchAllTipsAction(), [dispatchFetchAllTipsAction]);
   return (
-    <React.Fragment>
+    <div className="homeWrapper">
         <Header />
           <div>
             <br />
-              <Link to="newTip" className="btn btn-outline-secondary ml-4" >Add new tip</Link>
+              <Link to="newTip" className="btn btn-outline-secondary ml-5" >Add new tip</Link>
           </div>
           <div>
             <Plant plants={plants} />
           </div>
-    </React.Fragment>
+    </div>
   );
 };
 

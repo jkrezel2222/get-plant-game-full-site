@@ -7,18 +7,12 @@ import Container from "react-bootstrap/Container";
 
 
 
-export default function NavigationBar({ username, isLoggedIn, onLogout }) {
+export default function NavigationBar({ isLoggedIn, onLogout }) {
   return (
     <div>    
       <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
         <Container>
           <Link to="/" className="navBrand">Get Plant Game</Link>
-          {/* { isLoggedIn &&
-          <h5 className="loggedInBadge ml-auto mr-4" >
-            <span className="badge badge-pill badge-success" >
-                Logged in { username }
-            </span>
-          </h5> } */}
 
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">

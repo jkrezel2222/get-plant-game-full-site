@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import { loginAdmin } from "../../../redux/actions/authActionCreators";
 import { toast } from "react-toastify";
+import "../register/register.css";
 
 
 const LoginFormContainer = ({ dispatchLoginAction }) => {
@@ -18,10 +19,9 @@ const LoginFormContainer = ({ dispatchLoginAction }) => {
 
     return(
         <div>
-        <br />
-        <br />
-        <br />
-            <h4>Login and let's get to it!</h4>
+            <div className="registerTitle">
+            <h5>Login and let's get to it!</h5>
+            </div>
         <br />
             <form onSubmit={handleOnSubmit} >
                 <div className="form-group">

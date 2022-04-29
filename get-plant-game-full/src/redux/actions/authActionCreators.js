@@ -33,8 +33,7 @@ export const logoutAdmin = () => {
 
 
 const setAdminInfo = (data) => {
-    // const saveData = JSON.parse(atob(data.jwt.split(".")[1]));
-    // const parsedToken = JSON.parse(data.decoded_token);
+
     const adminInfo = {
         // fullname: `${data.firstname} ${data.lastname}`,
         firstname: data.firstname,

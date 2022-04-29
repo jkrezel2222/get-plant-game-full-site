@@ -47,10 +47,9 @@ const NewTip = ({ dispatchCreateTipAction }) => {
                   <input name="image_data" type="text" placeholder="Image url" className="newTipImage" autoFocus={true} 
                       value={image_data} onChange={(e) => setImage_data(e.target.value)} />
                   </div>
-                  <div>
-                  <button type="submit" className="btn btn-success publishButton" >Publish</button>
-                  <button type="button" onClick={() => history.push("/", { from: "newTip" })} className="btn btn-outline-secondary" >Back</button>
-
+                  <div className="btn-group">
+                    <button type="submit" className="btn btn-success publishButton" >Publish</button>
+                    <button type="button" onClick={() => history.push("/", { from: "newTip" })} className="btn btn-outline-secondary publishButton ml-2" >Back</button>
                   </div>
                   <div>
 

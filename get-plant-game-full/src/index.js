@@ -9,9 +9,8 @@ import axios from "axios";
 import { Provider } from "react-redux";
 import configureStore from "./redux/configureStore";
 
-// import axios from "axios";
 
-// axios.defaults.baseURL = "http://localhost:5000/api/v1/";
+
 axios.defaults.headers.common["Authorization"] = `Bearer ${localStorage.getItem("token")}`;
 
 

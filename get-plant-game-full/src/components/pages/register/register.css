@@ -1,7 +1,7 @@
 .register{
-    height: calc(100vh - 50px);
+    height: calc(150vh - 50px);
     background:
-    url("https://images.unsplash.com/photo-1600172454520-134a542a2255?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2874&q=80");
+    url("https://images.unsplash.com/photo-1488645411773-a3b09ea07e29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2888&q=80");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -9,7 +9,7 @@
 }
 
 .registerTitle{
-    margin-top: 80px;
+    margin-top: 50px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     color: dimgray;
@@ -17,8 +17,8 @@
 
 .registerForm{
     width: 60%;
-    margin-top: 120px;
-
+    margin-top: 50px;
+    margin-left: 60px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
 }

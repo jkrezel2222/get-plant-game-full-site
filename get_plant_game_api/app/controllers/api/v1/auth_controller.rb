@@ -24,17 +24,6 @@ class Api::V1::AuthController < ApplicationController
     end
     
 
-    # new login code added here
-
-    # def token_authenticate
-    #     token = request.headers["Authenticate"]
-    #     @admin = Admin.find(decode(token)["admin_id"])
-
-    #     render json: @admin
-    # end
-
-
-
 
     private
 
