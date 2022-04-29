@@ -7,10 +7,10 @@ export default function tipsReducer(state = [], action) {
         case constants.ADD_TIP:
             return state.concat(action.payload);
         case constants.REMOVE_TIP:
-            return state.filter(item => item._id !== action.payload);
+            return state.filter(item => item.id !== action.payload);
         case constants.UPDATE_TIP:
             return state.map(item => {
-                if(item._id === action.payload.plantID)
+                if(item.id === action.payload.plantID)
                     return { ...item, ...action.payload.data };
                 else
                     return item;

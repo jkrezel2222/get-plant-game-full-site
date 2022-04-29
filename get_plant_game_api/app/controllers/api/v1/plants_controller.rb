@@ -62,7 +62,7 @@ class Api::V1::PlantsController < ApplicationController
     private
 
     def plant_params
-        params.require(:plant).permit(:title, :image_data, :description, :admin_id)
+        params.require(:plant).permit(:title, :image_data, :description)
     end
 
 end

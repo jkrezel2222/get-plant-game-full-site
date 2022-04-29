@@ -22,11 +22,11 @@ const Plant = ({ plants }) => {
                           <span className="plantTitle">
                             {item.title}
                           </span>
-                          
-                        </div>
-                        <p className="plantDescription">
+                          <p className="plantDescription">
                           {item.description}
-                        </p>
+                          </p>
+                        </div>
+
                       </div>
                     ))
                 }

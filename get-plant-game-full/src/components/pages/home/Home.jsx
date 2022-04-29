@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "../../header/Header";
 import Plant from "../../plant/Plant";
-import Sidebar from "../../sidebar/Sidebar";
 import { connect } from "react-redux";
 import { fetchAllTips } from "../../../redux/actions/tipsActionsCreators";
 
@@ -20,7 +19,6 @@ const Home = ({ loading, plants, dispatchFetchAllTipsAction }) => {
           <div>
             <Plant plants={plants} />
           </div>
-        <Sidebar />
     </React.Fragment>
   );
 };
